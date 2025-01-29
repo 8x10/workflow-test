@@ -1,0 +1,18 @@
+name: Assign secrets to repo
+description: Use this to assign secrets to your repo.
+
+title: "[assign-secrets] 8x10/repo"
+labels: ["assign-secrets"]
+
+body:
+- type: markdown
+  attributes:
+    value: Use this form to assign secrets to your repo.
+- type: input
+  id: repo
+  attributes:
+    label: repo
+    description: What is the name of repo? (please also add the 8x10/ prefix)
+    placeholder: 8x10/repo
+  validations:
+    required: true
